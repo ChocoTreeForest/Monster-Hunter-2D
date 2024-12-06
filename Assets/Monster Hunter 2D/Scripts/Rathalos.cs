@@ -314,7 +314,7 @@ public class Rathalos : MonoBehaviour
         AudioManager.instance.PlaySFX(AudioManager.SFX.RathalosHit);
         StartCoroutine(BlinkEffect());
 
-        if (accumDamage >= 10)
+        if (accumDamage >= 750)
         {
             if (isStunned)
             {
