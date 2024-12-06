@@ -193,11 +193,12 @@ public class HunterStatus : MonoBehaviour
 
     private IEnumerator RedHPHeal()
     {
+
         while (redHP > 0)
         {
             yield return new WaitForSeconds(2f);
 
-            if(currentHP < redHP)
+            if(currentHP < redHP && !isPoisoned && !isBurned)
             {
                 currentHP += 1;
                 UpdateUI();
