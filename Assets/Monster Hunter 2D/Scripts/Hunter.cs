@@ -344,7 +344,7 @@ public class Hunter : MonoBehaviour
 
     public void TriggerRoarStun(float delay, float stunDuration)
     {
-        if (!stun && !status.invincible && hunterAttack.guardDirection == HunterAttack.GuardDirection.None)
+        if (!stun && !status.invincible && !isDead && hunterAttack.guardDirection == HunterAttack.GuardDirection.None)
         {
             StartCoroutine(RoarStun(delay, stunDuration));
         }

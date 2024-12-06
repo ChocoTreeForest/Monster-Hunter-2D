@@ -99,12 +99,6 @@ public class HunterStatus : MonoBehaviour
 
             UpdateUI();
         }
-
-        if (isBurned && redHP > currentHP)
-        {
-            redHP -= damage;
-        }
-
         UpdateUI();
     }
 
@@ -125,7 +119,7 @@ public class HunterStatus : MonoBehaviour
 
     public void ApplyBurn()
     {
-        if (isBurned || invincible) return;
+        if (isBurned) return;
 
         isBurned = true;
         burnIcon.SetActive(true);
@@ -150,7 +144,8 @@ public class HunterStatus : MonoBehaviour
         while (isBurned)
         {
             yield return new WaitForSeconds(2f);
-            TakeDamage(1, HunterAttack.GuardDirection.None);
+            if (redHP > currentHP) redHP--;
+            else TakeDamage(1, HunterAttack.GuardDirection.None);
         }
     }
 
