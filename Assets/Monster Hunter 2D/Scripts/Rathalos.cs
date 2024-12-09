@@ -424,6 +424,8 @@ public class Rathalos : MonoBehaviour
 
     public void TailAttackEnd()
     {
+        if (isStunned) return;
+
         if (!secondTailEnd)
         {
             StartCoroutine(SecondTailAttack());
