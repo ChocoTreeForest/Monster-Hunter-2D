@@ -5,6 +5,8 @@
 
 여러 공격 연계가 가능하고 몬스터의 공격 패턴이 다양해, 다채로운 플레이가 가능한 것이 특징입니다.
 
+게임 플레이 소개 영상: https://youtu.be/qLkpyw5vz0Q
+
 ![게임플레이](https://github.com/user-attachments/assets/fe5f8f2c-aee5-410d-97ba-0dfc5c5dc08a)
 
 ![게임플레이2](https://github.com/user-attachments/assets/93ab41fc-0177-42e0-a340-723e61f2fc37)
